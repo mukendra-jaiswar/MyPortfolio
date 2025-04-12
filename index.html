@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  
+    <script
+      type="text/javascript"
+      src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("n50RMmzbeadUTM4eZ"); // Replace with your actual Public Key
+      })();
+    </script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Mukendra Jaiswar - Web Developer Portfolio</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+      <nav class="navbar">
+        <div class="navbar-title">Mukendra Jaiswar</div>
+
+        <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#project">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="search-container" id="search-bar">
+          <input type="text" id="search-input" placeholder="Search..." />
+          <button onclick="handleSearch()">🔍</button>
+        </div>
+      </nav>
+
+      <!-- Side Menu + Overlay -->
+    <nav>
+      <div class="overlay" id="overlay"></div>
+      <div class="side-menu" id="side-menu">
+        <button class="close-btn" id="close-btn">← Back</button>
+        <ul class="mobile-nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#project">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Home Section -->
+    <section id="home">
+      <div class="home-wrapper">
+        <div class="home-image">
+          <img src="./images/me2.jpg" alt="Mukendra" />
+        </div>
+        <div class="home-content">
+          <h1 id="portfolio">Welcome to My Portfolio</h1>
+          <p>
+            Hello! I'm <strong>Mukendra Jaiswar</strong>, a passionate
+            Full-Stack Developer with expertise in Java, web development, and
+            Android-based apps. I specialize in creating interactive and
+            user-friendly web applications.
+          </p>
+          <p class="dynamic-text">
+            I am a <span id="dynamic-role">Web Developer</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="about-content">
+        <h1>About Me</h1>
+        <p>
+          I am currently pursuing my <strong>MCA</strong> from
+          <strong
+            >Thakur Institute of Management Studies, Career Development &
+            Research, Mumbai</strong
+          >. I have a strong passion for Java development and aspire to become a
+          Full-Stack Developer. Apart from coding, I enjoy playing Free Fire and
+          listening to music.
+        </p>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+      <div class="education-wrapper">
+        <h2 class="education-title">Education</h2>
+
+        <div class="education-item">
+          <h3>MCA | TIMSCDR, Mumbai</h3>
+          <p>
+            <strong>Status:</strong> Pursuing &nbsp; | &nbsp;
+            <strong>SGPA:</strong> 9.44 &nbsp; | &nbsp;
+            <strong>Year:</strong> 2025
+          </p>
+          <p>
+            <em
+              >Thakur Institute of Management Studies Career Development &
+              Research, University of Mumbai</em
+            >
+          </p>
+        </div>
+
+        <div class="education-item">
+          <h3>
+            Bachelor of Computer Application | Saints Francis De Sales College
+          </h3>
+          <p>
+            <strong>Percentage:</strong> 77.70% &nbsp; | &nbsp;
+            <strong>Year:</strong> 2024
+          </p>
+          <p><em>Rashtrasant Tukadoji Maharaj Nagpur University</em></p>
+        </div>
+
+        <div class="education-item">
+          <h3>HSC (XII) | Dharampeth M.P. Deo Memorial Science College</h3>
+          <p>
+            <strong>Percentage:</strong> 70.46% &nbsp; | &nbsp;
+            <strong>Year:</strong> 2020
+          </p>
+          <p>
+            <em>Maharashtra State Board of Secondary and Higher Secondary</em>
+          </p>
+        </div>
+
+        <div class="education-item">
+          <h3>SSC (X) | Balaji High School Nagpur</h3>
+          <p>
+            <strong>Percentage:</strong> 90.60% &nbsp; | &nbsp;
+            <strong>Year:</strong> 2018
+          </p>
+          <p>
+            <em>Maharashtra State Board of Secondary and Higher Secondary</em>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- My Work Section -->
+    <section id="project">
+      <div class="work-content">
+        <h1 style="padding-bottom: 10px">My Projects</h1>
+        <div class="work-gallery">
+          <div class="work-item">
+            <img src="images/clipper.jpg" alt="ClipperCraft" />
+            <div class="work-text">
+              <h2>ClipperCraft</h2>
+              <p>
+                A unisex salon website providing beauty services at affordable
+                rates. Implemented SEO and digital marketing strategies for lead
+                generation.
+              </p>
+            </div>
+          </div>
+          <div class="work-item">
+            <img src="/images/hackathon.jpg" alt="Hackathon Project" />
+            <div class="work-text">
+              <h2>College Hackathon</h2>
+              <p>
+                Conducted a college hackathon focusing on innovative
+                problem-solving and technical skill development.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="resume-container">
+          <button class="resume-btn">
+            <a href="./assets/61_Mukendra Jaiswar 2026 Resume.pdf" download
+              >Download Resume</a
+            >
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <div class="skills-content">
+        <h1>Skills</h1>
+        <div class="skills-list">
+          <div class="skill-category">
+            <h2>Programming & Development</h2>
+            <ul>
+              <li>Java, Spring Boot</li>
+              <li>HTML, CSS, JavaScript</li>
+              <li>React, Node.js</li>
+              <li>DOT Net developer</li>
+            </ul>
+          </div>
+          <div class="skill-category">
+            <h2>Database & DevOps</h2>
+            <ul>
+              <li>MySQL, MongoDB</li>
+              <li>Git, GitHub</li>
+            </ul>
+          </div>
+          <div class="skill-category">
+            <h2>Digital Marketing</h2>
+            <ul>
+              <li>SEO, Digital Marketing</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact section -->
+    <section id="contact">
+      <div class="contact-content">
+        <h1>FEEL FREE TO GET IN TOUCH</h1>
+
+        <form id="contact-form">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Write your message here..."
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+
+        <p id="response-msg" style="margin-top: 15px"></p>
+      </div>
+    </section>
+
+    <footer>
+      <p style="text-align: center">
+        &copy; 2025 Mukendra Jaiswar. All rights reserved.
+      </p>
+    </footer>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

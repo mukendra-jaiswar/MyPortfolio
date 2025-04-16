@@ -990,3 +990,34 @@ nav.navbar {
     display: block;
   }
 }
+
+
+.icon-list {
+  display: flex;
+  justify-content: center; /* Changed from space-evenly to center */
+  align-items: center;
+  list-style: none;
+  gap: 10px; /* Add small spacing between icons */
+  width: auto; /* Let it fit the content naturally */
+  margin-top: 10px;
+  padding: 0;
+}
+
+.icon-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px; /* Adjusted size to make spacing tighter */
+  width: 50px;
+  padding: 2px;
+  border-radius: 50%;
+  font-size: 24px;
+  color: #fff;
+  transition: 0.3s ease;
+}
+
+.icon-link:hover {
+  font-size: 40px;
+  color: #01FFF4;
+  box-shadow: 0 0 20px #01FFF4;
+}
